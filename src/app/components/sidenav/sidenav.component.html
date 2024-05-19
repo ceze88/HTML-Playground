@@ -1,0 +1,17 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav class="sidenav" mode="over">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/">Home</a>
+      <a mat-list-item routerLink="/profile">Profile</a>
+      <a mat-list-item routerLink="/saves">Saves</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-toolbar color="primary">
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="title" routerLink="/">HTML Playground</span>
+  </mat-toolbar>
+  <ng-content></ng-content>
+</mat-sidenav-container>

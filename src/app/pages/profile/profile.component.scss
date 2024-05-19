@@ -1,0 +1,29 @@
+/* profile.component.scss */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+mat-card {
+  width: 400px;
+  max-width: 100%;
+  margin: 20px;
+}
+
+mat-card-header {
+  //Make the label float to the left and the img to the right
+  justify-content: space-between;
+}
+
+img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: space-evenly;
+}

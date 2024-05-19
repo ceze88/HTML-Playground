@@ -1,0 +1,45 @@
+.saves-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #f0f0f0; // light gray background
+  color: #333; // dark gray text
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd; // light gray border
+}
+
+.right {
+  text-align: right;
+}
+
+button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:nth-child(1) {
+  background-color: #888; // gray background
+  color: #fff; // white text
+}
+
+button:nth-child(2) {
+  background-color: #f44336; // red background
+  color: #fff; // white text
+}

@@ -1,0 +1,16 @@
+<div class="shares-container">
+  <table *ngIf="loaded">
+    <tr *ngFor="let share of shares">
+      <td>URL: {{ getShareUrl(share) }}</td>
+      <td class="right">
+        <button (click)="deleteShare(share.id)">Delete</button>
+      </td>
+    </tr>
+  </table>
+  <div *ngIf="!loaded">
+    <h1>Loading...</h1>
+  </div>
+  <div *ngIf="loaded && shares.length == 0">
+    <h1>No saved HTML found. Create some!</h1>
+  </div>
+</div>

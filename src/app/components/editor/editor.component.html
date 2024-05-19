@@ -1,0 +1,22 @@
+<div class="editor-wrapper">
+  <div class="editor">
+    <mat-form-field appearance="outline">
+      <mat-label>HTML Content</mat-label>
+      <textarea matInput
+                [(ngModel)]="htmlContent"
+                (ngModelChange)="onContentChange()"
+                rows="25">
+    </textarea>
+    </mat-form-field>
+
+    <div class="preview-container">
+      <div id="inner-preview" #previewContainer></div>
+    </div>
+  </div>
+
+  <mat-action-row class="action-row">
+    <button mat-raised-button color="primary" (click)="onSave()">Save</button>
+    <button mat-raised-button color="accent" *ngIf="savedHtml" (click)="onBack()">Back</button>
+    <button mat-raised-button color="warn" (click)="onClear()">Clear</button>
+  </mat-action-row>
+</div>

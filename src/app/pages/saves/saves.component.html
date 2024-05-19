@@ -1,0 +1,17 @@
+<div class="saves-container">
+  <table *ngIf="loaded">
+    <tr *ngFor="let save of saves">
+      <td>{{ save.title }}</td>
+      <td class="right">
+        <button (click)="editSave(save)">Edit</button>
+        <button (click)="deleteSave(save.id)">Delete</button>
+      </td>
+    </tr>
+  </table>
+  <div *ngIf="!loaded">
+    <h1>Loading...</h1>
+  </div>
+  <div *ngIf="loaded && saves.length == 0">
+    <h1>No saved HTML found. Create some!</h1>
+  </div>
+</div>

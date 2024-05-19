@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="editor-preview-container">
+    <div class="editor-container">
+      <app-editor
+        [htmlContent]="htmlContent"
+        [savedHtml]="editing"
+        (contentChanged)="htmlContent = $event"
+      ></app-editor>
+    </div>
+  </div>
+
+
+</div>
